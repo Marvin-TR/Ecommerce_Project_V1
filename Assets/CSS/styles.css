@@ -17,6 +17,10 @@
     font-size: 4.5em;
 }
 
+#pcLogo {
+    display: inline;
+}
+
 #logoAnchor {
     text-decoration: none;
 }
@@ -56,7 +60,7 @@ nav {
     width: 100%;
     height: 500px;
     background-image: url("./../Images/heroHome.jpeg");
-    background-repeat: none;
+    background-repeat: no-repeat;
 }
 
 .heroHome div {
@@ -94,9 +98,11 @@ nav {
 
 .homeExploreAnchor {
     position: relative;
-    left: 35%;
+    top: 15%;
     width: 25%;
     height: 30%;
+    text-decoration: none;
+    text-align: center;
 }
 
 .homeExploreSection {
@@ -130,7 +136,7 @@ nav {
     background-color: #52007A;
     color: white;
     font-size: 1.3em;
-    text-align: center;
+    
 }
 
 .homeContactAnchor {
@@ -138,8 +144,14 @@ nav {
     left: 40%;
     width: 25%;
     height: 50%;
+    text-decoration: none;
+    text-align: center;
 }
 
+.homeContactAnchor span {
+    position: relative;
+    top: 25%;
+}
 
 .homeContactSection {
     display: grid;
@@ -345,6 +357,10 @@ footer a i {
     margin: 0 0 10px 0;
 }
 
+h6 {
+    display: none;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -363,12 +379,20 @@ html, body {
     }
 
     .homeExploreAnchor {
-        height: 70%;
+        height: 60%;
         width: 30%;
     }
 
+    .homeExploreAnchor div p {
+        margin-bottom: 35%;
+    }
+
     .homeContactAnchor {
-        height: 95%;
+        height: 100%;
+    }
+
+    .homeContactP {
+        font-size: 2em;
     }
 
     /* Products Page */
@@ -402,16 +426,29 @@ html, body {
     /* Home Page */
 
     .heroHome div {
-        top: 32%;
+        top: 42%;
+        font-size: 2.75em;
+    }
+
+    .homeExploreAnchor div p{
+        margin-top: 13%;
+    }
+
+    .homeExploreAnchor {
+        height: 50%;
+    }
+
+    .homeContactAnchor {
+        height: 60%;
+    }
+
+    .homeContactAnchor div {
+        top: 25%;
     }
 
     /* Products Page */
     .productRows {
         grid-template-columns: auto auto;  
-    }
-
-    .homeExploreAnchor {
-        height: 60%;
     }
 
     /* Contact Page */
